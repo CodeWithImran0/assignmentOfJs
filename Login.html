@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+
+    <header>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="">Login System</a></button>
+</header>
+
+
+    <script>
+        let userName = prompt("Enter your userName :)")
+        let username = "admin";
+        let password = "admin123";
+        if (userName == username) {
+            let userPassword = prompt("Enter your password :)")
+            if (userPassword == password) {
+                console.log("Login successful");
+            } else {
+                console.log("Incorrect password");
+
+            }
+
+
+        } else {
+            console.log("USERNAME INCORRECT");
+
+        }
+    </script>
+</body>
+
+</html>

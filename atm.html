@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button><a href="index.html">HOME</a></button>
+        <button><a href="">ATM System</a></button>
+</header>
+
+    <script>
+        let pin=1234;
+let balance=2000000;
+let userPin=prompt("Enter your ATM pin :)")
+
+if(userPin==pin){
+    let options=prompt("Option 1: Withdraw money\nOption 2: Check balance\nOption 3: Exit")
+    if(options==1){
+        let withDraw=prompt("Enter your withdraw amount :)")
+        document.write("<h1>your withdraw amont is here \t<h1>",withDraw,"<h1>\tRemaining Balance is\t<h1>",balance-withDraw);
+        
+    }else if(options==2){
+        document.write(balance);
+        
+    }else{
+        document.write("<h1>YOU CHOOSE WRONG OPTIONS SOORY \n TRY AGAIN :)<h1>");
+        
+    }
+}else{
+    document.write("<h1>incorrect pin<h1>");
+    
+}
+    </script>
+</body>
+</html>
